@@ -12,7 +12,7 @@ jobs:
             - name: Checkout Code
               uses: actions/checkout@v2
             - name: Verify HTML Exists
-              run: ls -l index.html
+            run: ls -l index.html
             - name: Build Docker Image
               run: docker build -t cicd-demo .
             - name: Run Container
